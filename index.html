@@ -6,37 +6,55 @@
     <title>Listas ordenadas, desordenadas y de definiciones en HTML</title>
   </head>
   <body role="document">
-  <!--Creacion de listas ordenadas-->
-  <h3>Ordenado</h3>
-  <ol>
-    <li>Item 1</li>
-    <li>Item 2 </li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-    <!--Listas anidadas-->
-      <ol>
-        <li>Anidado 1</li>
-        <li>Anidado 2</li>
-        <li>Anidado 3</li>
-      </ol>
-    <li>Item 5</li>
+    <!--Creacion de tablas estruturadas de acuerdo a w3-->
+    <h3>Creacion de tablas</h3>
+    <table border="1" cellspacing="0">
+      <caption>Tabla de productos</caption>
+      <thead>
+        <tr>
+          <th>Articulo</th>
+          <th>Precio</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Arroz</td>
+          <td>2500</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Pasta</td>
+          <td>2300</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Lenteja</td>
+          <td>3000</td>
+          <td>4</td>
+        </tr>
+        <tr>
 
-    <!--Listas desordenadas-->
-    <h3>Desordenado</h3>
-    <ul>
-      <li>Desordenado 1</li>
-      <li>Desordenado 2</li>
-      <li>Desordenado 3</li>
-    </ul>
-    <!--Listas de definiciones-->
-    <h3>Definiciones</h3>
-    <dl class="">
-      <dt>definicion 1</dt>
-      <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-      <dt>Definicion  2</dt>
-      <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-    </dl>
+          <td>3000</td>
+          <td>7</td>
+        </tr>
+        <tr>
 
-  </ol>
+          <td>3000</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Garbanzo</td>
+          <td>2700</td>
+          <td>4</td>
+        </tr>
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Gracias por sus compras</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
