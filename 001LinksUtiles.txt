@@ -1,1 +1,2 @@
 https://dev.w3.org/html5/html-author/charref para ver mas Caracteres especiales
+https://www.w3.org/TR/wai-aria/roles O https://www.w3.org/TR/wai-aria/ WAi-ARIA 
