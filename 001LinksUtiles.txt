@@ -1,2 +1,3 @@
 https://dev.w3.org/html5/html-author/charref para ver mas Caracteres especiales
-https://www.w3.org/TR/wai-aria/roles O https://www.w3.org/TR/wai-aria/ WAi-ARIA 
+https://www.w3.org/TR/2017/REC-wai-aria-1.1-20171214/ WAi-ARIA
+https://necolas.github.io/normalize.css/8.0.1/normalize.css descargar normalize para borrar estilos por defecto a la pagina
