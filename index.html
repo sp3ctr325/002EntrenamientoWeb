@@ -3,84 +3,26 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=none width=device-width">
     <meta charset="utf-8">
-    <title>Formularios en HTML</title>
+    <title>Audio y video en HTML</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body role="document">
     <!--Creacion de formularios-->
-    <h3>Creacion de Formularios</h3>
-    <form class="" action="index.html" method="post" > <!--Crea la estrutura basica del formulario-->
-      <fieldset ><!--Agrupa contenido relacionado-->
-        <legend>Input texto y label</legend><!--Crea un texto para renombrar el fielset-->
-        <label for="nombre">Ingrese nombre</label><!--Crea un nombre para el input, etiqueta meramente informativa su atributo for lo asigna a el input que tenga el id de mismo valor-->
-        <input type="text" name="nombre" placeholder="este es un nombre"><!-- Crea un cajon de entrada, es de tipo texto, el placegholder crea un texto de ayuda dentro del imput, autocomplete activa o desactiva llanedo automatico de datos-->
-      </fieldset>
-      <fieldset>
-        <legend>Input radio</legend>
-        <label for="sexo">Seleceione Sexo</label><br>
-        <input type="radio" name="sexo" value="Masculino">Masculino <br>
-        <input type="radio" name="sexo" value="Femenino" checked autofocus>Femenino<br>
-        <!--Este input genera un boton de seleccion multiple-->
-      </fieldset>
-      <fieldset>
-        <legend>Input select</legend>
-        <select class="" name="vehiculos">
-          <option value="Toyota">Toyota</option>
-          <option value="Nissan" selected>Nissan</option>
-          <option value="Chevrolet">Chevrolet</option>
-          <!--SIrve para desplegar un menu donde se selecciona una opcion-->
-        </select>
-      </fieldset>
-      <fieldset>
-        <legend>Input checkbox</legend>
-        <label for="">Selecione un area:</label><br>
-        <input type="checkbox" name="" value="informatica">Informatica <br>
-        <input type="checkbox" name="" value="Biologia">Biologia <br>
-        <input type="checkbox" name="" value="Sociales">Sociales <br>
-        <!--Este input permite desplegar opciones de las cuales se puede seleccionar una o varias-->
-      </fieldset>
-      <fieldset>
-        <legend>Otros parar fechas</legend>
-                <!--Inputs relacionados con la fecha y la hora -->
-        <label for="">seleccion de fecha</label>
-        <input type="date" name="fecha"> <br>
-        <label>Fecha y hora local</label>
-        <input type="datetime-local" name="FechaHoraLocal"><br>
-        <label>Seleccion de mes</label>
-        <input type="month" name="mes"><br>
-        <label>Seleccion de semana</label>
-        <input type="week" name="semana"><br>
-        <label>Seleccion de hora</label>
-        <input type="time" name="hora"><br><br>
-      </fieldset>
-      <fieldset>
-        <legend>Otros input</legend>
-        <label for="">Inpur color</label>
-        <input type="color" name="color" id="color"><br><br>
-
-        <label>Correo eletronico</label>
-        <input type="email" name="CorreoE" placeholder="Ingrese correo"><br><br>
-
-        <label>direccion de internet </label>
-        <input type="url" name="paginacliente" placeholder="Ingrese direccion de internet" required><br><br>
-
-        <label>INPUT PARA RANGO</label>
-        <input type="range" name="rango" min="0" max="20" ><br><br>
-
-        <label>INPUT PARA NUMERO</label>
-        <input type="number" name="numero" min="1" max="20" ><br><br>
-
-        <label>INPUT PARA contraseña</label>
-        <input type="password" name="contraseña" placeholder="Ingrese contraseña" required><br><br>
-<!--El atributo required indica al campo que es requerido y se utiliza para realizar validacion de los campos-->
-      </fieldset>
-      <fieldset>
-        <legend>Input submit y button</legend>
-        <input type="submit" name="enviar" value="enviar">
-        <button type="reset" name="reset" style="color:red;">Limpiar</button>
-        <button type="submit" name="Actualizar" style="color:green;">Actualizar</button>
-      </fieldset>
-    </form>
+    <h3>Video</h3>
+    <video  controls  poster="img/poster.jpg" width="50%" preload="auto">
+      <!--
+      *Los atributos preload funciona en audio y video en video verifica si se usa con datos movile, la opcion mas acertada para video es auto y para audio es none.
+      *autoplay reproduce automaticamente la multimedia pero no funciona en chrome
+  -->
+      <source src="video/codigo.mp4" type="video/mp4">
+      <source src="video/codigo.webm" type="video/webm">
+      <source src="video/codigo.ogv" type="video/ogg">
+    </video>
+    <h3>Audio</h3>
+<audio  controls autoplay>
+  <source src="audio/audio.m4a" type="audio/mp4">
+  <source src="audio/audio.oga" type="audio/ogg">
+</audio>
   </body>
 </html>
